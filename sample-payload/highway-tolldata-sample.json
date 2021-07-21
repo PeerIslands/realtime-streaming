@@ -1,0 +1,123 @@
+//sample payload JSON for highway toll data
+
+{
+    "tollPointId": "toll-1",
+    "laneNumber": 1,
+    "date": "2021-07-21T00:00:00.000",
+    "transponders": {
+        "serial": "abc18",
+        "agencyCode": "I40",
+        "lowBattery": false,
+        "arrivalDate": "2020-10-01",
+        "departureDate": "2020-12-01",
+        "protocol": "ISOC"
+    },
+    "transaction": {
+        "_id": 0,
+        "transactionDate": "2021-07-21T12:28:51.032384800",
+        "travelDirectionA": false,
+        "wrongWayIndicator": false,
+        "controllerContext": {
+            "controllerMode": "TOLLING-ENABLED",
+            "controllerState": "ACTIVE",
+            "failureVesCamera": false,
+            "failureLoop": false,
+            "failureLaserScanner": false,
+            "failureAviReader": false,
+            "failureLed": false,
+            "acquiredWithNoTimeSync": false,
+            "acquiredWithNoTvl": false,
+            "spooledTransaction": false,
+            "missingImages": false,
+            "bufferedAvi": false,
+            "noAviCorrelation": true,
+            "oneToOneAviCorrelation": false,
+            "multipleAviCorrelation": false,
+            "laserToAviCorrelationFailed": false,
+            "lasertoLoopCorrelationFailed": false,
+            "tvlCorrelated": true,
+            "correlationTvlVerified": true,
+            "correlationTvlFilled": true,
+            "errorType": ""
+        },
+        "vehicle": {
+            "vehicleTollClass": 2,
+            "vehicleShapeClass": 3,
+            "vehicleShapeSubClass": 3,
+            "vehicleShapeClassConfidence": 84,
+            "vehicleAxleCount": 2,
+            "vehicleHeight": 74,
+            "vehicleLength": 219,
+            "vehicleWidth": 66,
+            "vehicleSpeed": 44,
+            "vehicleSpeedOls": 43
+        },
+        "listRecords": {
+            "recordId": 0,
+            "sourceBatchId": "20201223-1",
+            "listName": "TVL-PARTIAL-CONSTANT",
+            "transponderSerial": "abc18",
+            "transponderAgencyCode": "I40",
+            "transponderProtocol": "ISOC",
+            "transponderAccountStatusCode": "INVALID",
+            "plateState": "IN",
+            "plateNumber": "ATS949",
+            "vehicleTollClass": 5,
+            "vehicleMake": "SUZUKI",
+            "vehicleModel": "POLO",
+            "vehicleYear": 2009,
+            "vehicleColor": "WHITE",
+            "vehicleAxleCount": 2,
+            "vehicleVin": 11151,
+            "updateDate": "2021-07-21T12:28:51.035799600",
+            "creationDate": "2021-07-21T12:28:51.035799600"
+        },
+        "images": [{
+                "_id": 0,
+                "cameraType": "REAR",
+                "cameraNumber": 1,
+                "contentType": "JPEG-CONSTANT",
+                "uri": "https://my/dir/where/file/is/and/its/name_camtype.jpg-CONSTANT",
+                "imageType": "COLOR",
+                "height": 720,
+                "width": 2048,
+                "transactionPlate": {
+                    "state": "IN",
+                    "stateConfidence": 84,
+                    "number": "ATS949",
+                    "numberConfidence": 84
+                }
+            }, {
+                "_id": 0,
+                "cameraType": "REAR",
+                "cameraNumber": 2,
+                "contentType": "JPEG-CONSTANT",
+                "uri": "https://my/dir/where/file/is/and/its/name_camtype.jpg-CONSTANT",
+                "imageType": "IR",
+                "height": 720,
+                "width": 2048,
+                "transactionPlate": {
+                    "state": "IN",
+                    "stateConfidence": 84,
+                    "number": "ATS949",
+                    "numberConfidence": 84
+                }
+            }, {
+                "_id": 0,
+                "cameraType": "FRONT",
+                "cameraNumber": 3,
+                "contentType": "JPEG-CONSTANT",
+                "uri": "https://my/dir/where/file/is/and/its/name_camtype.jpg-CONSTANT",
+                "imageType": "COLOR",
+                "height": 720,
+                "width": 2048,
+                "transactionPlate": {
+                    "state": "IN",
+                    "stateConfidence": 84,
+                    "number": "ATS949",
+                    "numberConfidence": 84
+                }
+            }
+        ]
+    }
+}

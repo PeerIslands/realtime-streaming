@@ -1,0 +1,25 @@
+//sample payload JSON for windmill data
+
+{
+    "AssetId": "wm-300001",
+    "DateTime": "2021-07-21",
+    "Measurement": {
+        "airDensity": 1.503375,
+        "RotorTemperature": 42.7,
+        "OutsideAirTemperature": 36.7,
+        "Timestamp": "2021-07-21T12:37:16.248536700",
+        "WindSpeedMS": 10.92718,
+        "LVActivePowerKW": 2824.5814815059416,
+        "LVActivePowerMW": 2.8245814815059416,
+        "TheoreticalPowerCurveKWh": 3703.340164641124,
+        "TheoreticalPowerCurveMW": 3.7033401646411237,
+        "WindDirection": 289.0249,
+        "RotorSpeed": 7.0,
+        "RotorSpeedElectrical": 1155.0
+    },
+    "Location": {
+        "Coordinates": [-100.4485, 32.344500000000004],
+        "Region": "USA",
+        "City": "Texas"
+    }
+}
